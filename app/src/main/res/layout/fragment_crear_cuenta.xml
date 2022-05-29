@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.CrearCuenta">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fbuscar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CrearCuenta_fotoPerfil"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:padding="8dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/crearCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CrearCuenta_fotoPerfil"
+            android:layout_marginTop="5dp"
+            android:text="Añadir foto"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crearCuenta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/CrearCuenta_txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:hint="Nombre:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/browser_actions_divider_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/correo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/CrearCuenta_txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:hint="Correo:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:background="@color/browser_actions_divider_color"/>
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contrasena"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/correo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/CrearCuenta_txtContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:hint="Contraseña:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:background="@color/browser_actions_divider_color"/>
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmarContrasena"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contrasena"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/CrearCuenta_txtConfirmarContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:hint="Confimar Contraseña:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:background="@color/browser_actions_divider_color"/>
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fechaNac"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmarContrasena"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/CrearCuenta_txtFechaNac"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Fecha Nacimiento:"
+                android:inputType="date"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/browser_actions_divider_color"/>
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/CrearCuenta_radioGrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fechaNac"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/CrearCuenta_rdHombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"                android:hint="Hombre" />
+
+            <RadioButton
+                android:id="@+id/CrearCuenta_rdMujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:hint="Mujer" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/CrearCuenta_btnCrearCuenta"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/CrearCuenta_radioGrup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Confirmar"
+            android:background="@drawable/btn_redondeado_white"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

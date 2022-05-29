@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459098942694",
+    "project_id": "redsocial-b5dea",
+    "storage_bucket": "redsocial-b5dea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459098942694:android:67311e227582d3166d5f27",
+        "android_client_info": {
+          "package_name": "com.bryan.redsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459098942694-9pepqbbggc5mao0uuqodstfvb9fdvhvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClF2lNPv3ZFw6-WBUS92TMiQgN4JoSr7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459098942694-9pepqbbggc5mao0uuqodstfvb9fdvhvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

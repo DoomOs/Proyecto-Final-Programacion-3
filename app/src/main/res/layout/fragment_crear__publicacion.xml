@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Crear_Publicacion">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fnewpubli" />
+
+    <EditText
+        android:id="@+id/CrearPublicacion_texto"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/CrearPublicacion_foto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@color/browser_actions_divider_color"
+        android:hint="comparte tus experiencias..."
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/CrearPublicacion_foto"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_baseline_image_search_24" />
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CrearPublicacion_texto"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/CrearPublicacion_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_buttom"
+            android:hint="Volver" />
+
+        <Button
+            android:id="@+id/CrearPublicacion_publicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/borde_buttom"
+            android:hint="Publicar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

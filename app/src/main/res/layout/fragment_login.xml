@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Login">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1550dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flogin" />
+
+    <ImageView
+        android:id="@+id/logotipo"
+        android:layout_width="176dp"
+        android:layout_height="178dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/Login_iniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logotipo"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Iniciar Sesión "
+        android:textAlignment="center"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/correo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_iniciarSesion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+
+        <EditText
+            android:id="@+id/Login_txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/browser_actions_divider_color"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="12dp"
+            android:textColor="@color/white"
+            android:hint="Correo:"
+
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contrasena"
+        android:layout_below="@id/correo"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/Login_txtContra"
+            android:backgroundTint="@color/browser_actions_divider_color"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="Contraseña"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/Login_btnIniciarSesion"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/contrasena"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_redondeado_white"
+        android:onClick="iniciarSesion"
+        android:text="Iniciar Sesion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Programación III - @Miumg 2022"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="685dp"
+        />
+
+    <TextView
+        android:id="@+id/Login_crearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_btnIniciarSesion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="Crear Cuenta"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

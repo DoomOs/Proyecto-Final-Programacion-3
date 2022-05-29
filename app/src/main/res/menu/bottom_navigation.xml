@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Inicio"
+        android:icon="@drawable/inicio"
+        android:title="Inicio"/>
+
+
+    <item
+        android:id="@+id/Buscar"
+        android:icon="@drawable/meessege"
+        android:title="Chat"/>
+
+    <item
+        android:id="@+id/Menu"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Menu"/>
+</menu>
